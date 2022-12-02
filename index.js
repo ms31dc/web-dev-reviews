@@ -30,7 +30,7 @@ else if(req.url=='/api')
     fs.readFile( path.join(__dirname,'public','db.json'),(err,data)=>{
         if (err) throw err;
     
-        res.writeHead(200,{ 'Content-Type' : 'application/json'});
+        res.writeHead(200,headers);
         res.end(data);
         })
        /*
