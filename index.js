@@ -4,7 +4,16 @@ const path = require('path');
 
 const server   =http.createServer((req,res) => {
 console.log(req.url)
+////kkkkk
+const headers = {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "OPTIONS, POST, GET",
+    "Access-Control-Max-Age": 2592000, // 30 days
+    "Content-Type": 'application/json' 
+  };
 
+/////kkkk
+    
 if(req.url === '/'){
 
     fs.readFile( path.join(__dirname,'public','index.html'),(err,data)=>{
