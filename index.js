@@ -32,7 +32,7 @@ else if(req.url=='/api')
 }
 else{
 
-    res.end("<h1>Eror 404 Page not found</h1>")
+    res.end("Eror 404 Page not found")
 }
 
 });
